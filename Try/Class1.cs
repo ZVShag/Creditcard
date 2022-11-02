@@ -12,13 +12,14 @@ namespace Try
         private string fio;
         private string date;
         private int cvc;
-        public Creditcard(int num_card, string fio, string date, int cvc)
+        public void Creditcard_set(int num_card, string fio, string date, int cvc)
         {
             this.num_card = num_card;
             this.fio = fio;
             this.date = date;
             this.cvc = cvc;
         }
+        public Creditcard() { }
         public int Cvc()
         {
             return this.cvc;
@@ -34,6 +35,10 @@ namespace Try
         public string Date()
         {
             return this.date;
+        }
+        public void Replace_card_number(int x)
+        {
+            this.num_card=x;
         }
     }
 }
